@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+
+        footer {
+            padding: 25px;
+        }
+    </style>
+    <link rel="stylesheet" href="./view.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">내가 선택한 단어 보기</a>
+        </div>
+    </div>
+</nav>
+
+<div id="wordList">
+    <h1 id="tagForWord" style="padding-top: 5px">Word</h1>
+</div>
+
+<hr>
+
+<div class="container mt-5" id="word">
+    <h2>단어 정보 입력</h2>
+    <form action="index.html" method="post">
+        <table class="table table-bordered">
+            <tbody>
+            <tr>
+                <td>단어</td>
+                <td><input type="text" name="word" value="" required></td>
+            </tr>
+            <tr>
+                <td>단어 수준</td>
+                <td><input type="text" name="level" value="" required></td>
+            </tr>
+            <tr>
+                <td>업로드 날짜</td>
+                <td><input type="date" name="date" value="2023-10-07" required></td>
+            </tr>
+            <tr>
+                <td>예제</td>
+                <td><input type="text" name="example" value="" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit" class="btn btn-success">제출</button></td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+
+<footer class="container-fluid text-center">
+    <div class="searchButton" id="addButton">
+        <button class="btn btn-success" onclick="location.href='index.html'">메인 페이지로 돌아가기</button>
+    </div>
+</footer>
+
+</body>
+</html>

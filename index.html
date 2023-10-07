@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+    </style>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<script>
+    function goToMorePage() {
+        window.location.href = "view.html";
+    }
+
+    function goToAddPage() {
+        window.location.href = "add.html";
+    }
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">My Vocabulary</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--<div class="jumbotron">-->
+<!--    <div class="container text-center">-->
+<!--        <h1>My Portfolio</h1>-->
+<!--        <p>Some text that represents "Me"...</p>-->
+<!--    </div>-->
+<!--</div>-->
+
+<div id = "wordList">
+    <h1>
+        Word List
+        <div class="btn-group d-flex" data-toggle="buttons" id="levelButton">
+            <label class="btn btn-primary active">
+                <input type="radio" name="toggle" value="option1" checked> Level 1
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="toggle" value="option2"> Level 2
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="toggle" value="option2"> Level 3
+            </label>
+
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" name="search" style="width: 200px">
+            <div class="searchButton">
+                <button class="btn btn-success" type="submit">검색</button>
+            </div>
+        </div>
+    </h1>
+    </button>
+</div>
+<hr>
+
+<div class="container mt-5" id="word">
+    <h2 style="padding-bottom: 15px">단어장</h2>
+    <table class="table table-bordered">
+        <thead id="wordTitle">
+        <tr>
+            <th>#</th>
+            <th>level</th>
+            <th>단어</th>
+            <th>의미</th>
+            <th>메뉴</th>
+        </tr>
+        </thead>
+        <tbody id="wordBody">
+        <tr>
+            <td>1</td>
+            <td>***</td>
+            <td>Word 1</td>
+            <td>Meaning 1</td>
+            <td class="buttonMenu">
+                <button onclick="goToMorePage()"> 더보기</button>
+                <button> 삭제</button>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>***</td>
+            <td>Word 1</td>
+            <td>Meaning 1</td>
+            <td class="buttonMenu">
+                <button onclick="goToMorePage()"> 더보기</button>
+                <button> 삭제</button>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>***</td>
+            <td>Word 1</td>
+            <td>Meaning 1</td>
+            <td class="buttonMenu">
+                <button onclick="goToMorePage()"> 더보기</button>
+                <button> 삭제</button>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>***</td>
+            <td>Word 1</td>
+            <td>Meaning 1</td>
+            <td class="buttonMenu">
+                <button onclick="goToMorePage()"> 더보기</button>
+                <button> 삭제</button>
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>***</td>
+            <td>Word 1</td>
+            <td>Meaning 1</td>
+            <td class="buttonMenu">
+                <button onclick="goToMorePage()"> 더보기</button>
+                <button> 삭제</button>
+            </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>***</td>
+            <td>Word 1</td>
+            <td>Meaning 1</td>
+            <td class="buttonMenu">
+                <button onclick="goToMorePage()"> 더보기</button>
+                <button> 삭제</button>
+            </td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>***</td>
+            <td>Word 1</td>
+            <td>Meaning 1</td>
+            <td class="buttonMenu">
+                <button onclick="goToMorePage()"> 더보기</button>
+                <button> 삭제</button>
+            </td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>***</td>
+            <td>Word 1</td>
+            <td>Meaning 1</td>
+            <td class="buttonMenu">
+                <button onclick="goToMorePage()"> 더보기</button>
+                <button> 삭제</button>
+            </td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>***</td>
+            <td>Word 1</td>
+            <td>Meaning 1</td>
+            <td class="buttonMenu">
+                <button onclick="goToMorePage()"> 더보기</button>
+                <button> 삭제</button>
+            </td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>***</td>
+            <td>Word 10</td>
+            <td>Meaning 10</td>
+            <td class="buttonMenu">
+                <button onclick="goToMorePage()"> 더보기</button>
+                <button> 삭제</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<nav aria-label="Page navigation" id="pageNavigation">
+    <ul class="pagination">
+        <li>
+            <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+            <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<div class="searchButton" id="addButton">
+    <button class="btn btn-success" type="submit" onclick="goToAddPage()">단어 추가하기</button>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<footer class="container-fluid text-center">
+    <p>22000063 김동규</p>
+</footer>
+
+</body>
+</html>
+
+</html>

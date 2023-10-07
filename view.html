@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+
+        /* Add a gray background color and some padding to the footer */
+        footer {
+
+            padding: 25px;
+        }
+    </style>
+    <link rel="stylesheet" href="./view.css">
+</head>
+<script>
+    function goToHomePage() {
+        window.location.href = "index.html";
+    }
+
+    function goToEditPage() {
+        window.location.href = "edit.html";
+    }
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">내가 선택한 단어 보기</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        </div>
+    </div>
+</nav>
+
+<!--<div class="jumbotron">-->
+<!--    <div class="container text-center">-->
+<!--        <h1>My Portfolio</h1>-->
+<!--        <p>Some text that represents "Me"...</p>-->
+<!--    </div>-->
+<!--</div>-->
+<br>
+<div id = "wordList">
+    <h1 id="tagForWord">
+        Word
+    </h1>
+</div>
+<hr>
+
+<div class="container mt-5" id="word">
+    <h2>
+        <table class="table table-bordered">
+            <thead>
+            </thead>
+            <tbody>
+            <tr>
+                <td>단어</td>
+                <td>apple</td>
+            </tr>
+            <tr>
+                <td>단어 수준</td>
+                <td>*</td>
+            </tr>
+            <tr>
+                <td>업로드 날짜</td>
+                <td>2023/10/07</td>
+            </tr>
+            <tr>
+                <td>예제</td>
+                <td>I like apple.</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </h2>
+</div>
+
+<footer class="container-fluid text-center">
+    <div class="searchButton" id="addButton">
+        <button class="btn btn-success" type="submit" onclick="goToEditPage()">수정하기</button>
+        <button class="btn btn-success" type="submit" onclick="goToHomePage()">메인 페이지로 돌아가기</button>
+    </div>
+</footer>
+
+</body>
+</html>
+
+</html>

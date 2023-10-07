@@ -1,0 +1,52 @@
+body {
+    font: 100% Lucida Sans, Verdana;
+    line-height: 26px;
+}
+
+#wordList {
+    padding-left: 30px;
+    padding-bottom: 50px;
+}
+
+#levelButton {
+    float: right;
+    padding-right: 30px;
+}
+
+#addButton {
+    float: right;
+    padding-right: 30px;
+}
+
+.searchButton {
+    float: right;
+}
+
+#wordTitle {
+    font-size: 18px;
+}
+
+#wordBody {
+    font-size: 15px;
+}
+
+#pageNavigation {
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 (필요하다면 사용) */
+}
+
+.buttonMenu {
+    color: grey;
+}
+
+#word {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 (필요하다면 사용) */
+}
+
+#buttonMenu {
+    background-size: 10px;
+}
