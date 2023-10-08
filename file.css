@@ -1,0 +1,16 @@
+body {
+    font: 100% Lucida Sans, Verdana;
+    line-height: 26px;
+}
+
+#tagForWord {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#addButton {
+    float: right;
+    padding-right: 30px;
+}

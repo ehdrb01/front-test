@@ -1,16 +1,65 @@
-body {
-    font: 100% Lucida Sans, Verdana;
-    line-height: 26px;
+/* Extra small devices (phones) */
+@media (max-width: 575px) {
+    #tagForWord {
+        font-size: 24px;
+    }
+
+    #word h2 {
+        font-size: 20px;
+    }
+
+    table {
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+    }
+
+    table tbody td {
+        padding: 8px;
+    }
+
+    footer .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
 
-#tagForWord {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+/* Small devices (tablets) */
+@media (min-width: 576px) and (max-width: 767px) {
+    #tagForWord {
+        font-size: 28px;
+    }
+
+    #word h2 {
+        font-size: 22px;
+    }
+
+    table tbody td {
+        padding: 10px;
+    }
+
+    footer .btn {
+        width: 80%;
+        margin: 10px auto;
+    }
 }
 
-#addButton {
-    float: right;
-    padding-right: 30px;
+/* Medium devices (desktops) */
+@media (min-width: 768px) and (max-width: 991px) {
+    #tagForWord {
+        font-size: 32px;
+    }
+
+    #word h2 {
+        font-size: 24px;
+    }
+
+    table tbody td {
+        padding: 12px;
+    }
+
+    footer .btn {
+        width: 60%;
+        margin: 15px auto;
+    }
 }
