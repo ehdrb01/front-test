@@ -18,8 +18,28 @@
             padding: 25px;
         }
     </style>
-    <link rel="stylesheet" href="./view.css">
+    <link rel="stylesheet" href="my.css">
 </head>
+<script>
+    function validationCheck() {
+        var word = document.forms[0]["word"].value;
+        var level = document.forms[0]["level"].value;
+        var date = document.forms[0]["date"].value;
+        var example = document.forms[0]["example"].value;
+
+        if (!word || !level || !date || !example) {
+            alert("모든 필드를 채워주세요!");
+            return false; // 이를 통해 폼 제출을 방지합니다.
+        }
+
+        var confirmText = confirm("정말로 수정하시겠습니까?");
+
+        if(confirmText) {
+            return true;
+        }
+        return false;
+    }
+</script>
 
 <body>
 
@@ -39,24 +59,24 @@
 
 <div class="container mt-5" id="word">
     <h2>단어 정보 수정</h2>
-    <form action="updateWordProcess.html" method="post">
+    <form action="index.html" method="post" onsubmit="return validationCheck()">
         <table class="table table-bordered">
             <tbody>
             <tr>
                 <td>단어</td>
-                <td><input type="text" name="word" value="" required></td>
+                <td><input type="text" name="word" value=""></td>
             </tr>
             <tr>
                 <td>단어 수준</td>
-                <td><input type="text" name="level" value="" required></td>
+                <td><input type="text" name="level" value=""></td>
             </tr>
             <tr>
                 <td>업로드 날짜</td>
-                <td><input type="date" name="date" value="2023-10-07" required></td>
+                <td><input type="date" name="date" value=""></td>
             </tr>
             <tr>
                 <td>예제</td>
-                <td><input type="text" name="example" value="" required></td>
+                <td><input type="text" name="example" value=""></td>
             </tr>
             <tr>
                 <td colspan="2"><button type="submit" class="btn btn-success">수정하기</button></td>

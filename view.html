@@ -20,7 +20,7 @@
             padding: 25px;
         }
     </style>
-    <link rel="stylesheet" href="./view.css">
+    <link rel="stylesheet" href="my.css">
 </head>
 <script>
     function goToHomePage() {
@@ -29,6 +29,10 @@
 
     function goToEditPage() {
         window.location.href = "edit.html";
+    }
+
+    function deleteWord() {
+        return confirm("정말로 삭제하시겠습니까?");
     }
 </script>
 <!DOCTYPE html>
@@ -89,8 +93,18 @@
 
 <footer class="container-fluid text-center">
     <div class="searchButton" id="addButton">
+
         <button class="btn btn-success" type="submit" onclick="goToEditPage()">수정하기</button>
+
+
+        <form style="display: inline-block" action="index.html">
+            <button class="btn btn-success" type="submit" onclick="deleteWord()">삭제하기</button>
+        </form>
+
+
         <button class="btn btn-success" type="submit" onclick="goToHomePage()">메인 페이지로 돌아가기</button>
+
+
     </div>
 </footer>
 
